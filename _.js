@@ -1,4 +1,8 @@
 const _ = {
+    clamp: function(numOne, numTwo, numThree) {
+        let newNum = Math.max(numOne, numTwo);
+        return Math.min(newNum, numThree);
+    },
 
 }
 
