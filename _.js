@@ -53,6 +53,9 @@ const _ = {
             return output;
         }
     },
+    has: function(object, property) {
+        return object.hasOwnProperty(property);
+    },
     
 }
 
