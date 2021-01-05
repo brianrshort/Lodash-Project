@@ -56,6 +56,15 @@ const _ = {
     has: function(object, property) {
         return object.hasOwnProperty(property);
     },
+    invert: function(object) {
+        var invertedObject = {};
+        var keysArray = Object.keys(object);
+        var valuesArray = Object.values(object);
+        for (var i=0; i < keysArray.length; i++) {
+            invertedObject[valuesArray[i]] = keysArray[i];
+        }
+        return invertedObject;
+    },
     
 }
 
