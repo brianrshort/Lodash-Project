@@ -89,7 +89,18 @@ const _ = {
         }
         return arr; 
     },
-    
+    chunk: function(arr, num) {
+        var newArr = [];
+        //for (var i=0; i <= arr.length; i++) {
+        do  {
+            if(arr.length < num) {
+                newArr.push(arr.splice(0, arr.length));
+            } else {
+            newArr.push(arr.splice(0, num));
+        }
+     } while (arr.length > 0);
+        return newArr;
+    }
 }
 
 
