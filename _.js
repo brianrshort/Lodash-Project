@@ -65,6 +65,15 @@ const _ = {
         }
         return invertedObject;
     },
+    findKey: function(object, callback) {
+        var arr = Object.values(object);
+        var arrTwo = Object.keys(object);
+        for (var i=0; i < arr.length; i++) {
+            if (callback(arr[i])) {
+                return arrTwo[i];
+            }
+        }
+    },
     
 }
 
