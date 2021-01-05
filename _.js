@@ -74,6 +74,13 @@ const _ = {
             }
         }
     },
+    drop: function(arr, num) {
+        if (!num) {
+            num = 1;
+        }
+        arr.splice(0, num);
+        return arr;
+    },
     
 }
 
